@@ -1,0 +1,35 @@
+% ====================
+% Based on the project: http://songs.sourceforge.net/
+% Documentation at: http://songs.sourceforge.net/songsdoc/songs.html
+% Actual tablature from: https://tex.stackexchange.com/a/49156
+% Chords from https://www.ctan.org/pkg/guitarchordschemes
+% Index from https://tex.stackexchange.com/a/438598
+% Online chord calculator: https://www.imusic-school.com/es/herramientas/acordes-guitarra/
+% ====================
+\documentclass{article}
+
+    % Notas:
+    %   Faltan los bajeos (con LilyPond)
+    %   Falta poner los acordes graficamente
+
+% ALL imports and configuration styles must be into config/main
+\usepackage{config/main}
+
+\begin{document}
+
+    \phantomsection 
+    \hypertarget{indice}{}
+    \tableofcontents
+    \clearpage
+
+    \songsection{Tanátuna / Veneno libertad}
+    \begin{songs}{}
+
+        \input{src/a_susurros_suaves/main}
+
+    \end{songs}
+    
+    \songsection{Bajeos/Arpegios}
+        \input{examples/bajeo_de_ejemplo.tex}
+    
+\end{document}
